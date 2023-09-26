@@ -1,0 +1,496 @@
+html,
+body {
+    background-color: rgb(9, 3, 29);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #72DDF7;
+}
+
+a:hover {
+    color: #B388EB;
+}
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    padding: none;
+    margin: none;
+    background-color: rgb(9, 3, 29);
+    mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
+            transparent 40px,
+            transparent 150px);
+    -webkit-mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
+            transparent 0px,
+            transparent 99px,
+            black 100px);
+}
+
+:root {
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+}
+
+.fruit {
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+    top: 35%;
+    position: absolute;
+    z-index: 5;
+}
+
+@font-face {
+    font-family: handjet;
+    src: url(../text/Handjet-Thin.ttf);
+}
+
+@font-face {
+    font-family: handjetextra;
+    src: url(../text/Handjet-ExtraLight.ttf);
+}
+
+.text {
+    font-family: handjetextra;
+    color: white;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.nameplate {
+    font-family: handjetextra;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.letter {
+    padding: 1px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    transition: transform ease-in-out 0.1s;
+}
+
+#secret {
+    height: 20px;
+    width: 20px;
+    opacity: 0%;
+}
+
+.linkbox {
+    position: relative;
+    display: inline-block;
+    padding: 0px 55px;
+    margin: auto;
+    cursor: pointer;
+    transition: transform ease-in 0.1s;
+}
+
+.linkbox:hover {
+    transform: scale(110%);
+}
+
+#g:hover {
+    color: #4375ff;
+    transform: scale(110%) translate(-10%);
+}
+
+#a:hover {
+    color: #72DDF7;
+    transform: scale(110%) translate(-10%);
+}
+
+#b:hover {
+    color: #6347df;
+    transform: scale(110%) translate(-10%);
+}
+
+#i:hover {
+    color: #9A8EEE;
+    transform: scale(110%) translate(-10%);
+}
+
+#l:hover {
+    color: #a972cb;
+    transform: scale(110%) translate(-10%);
+}
+
+#e:hover {
+    color: #ef6eae;
+    transform: scale(110%) translate(-10%);
+}
+
+#c:hover {
+    color: #ff7f82;
+    transform: scale(110%) translate(-10%);
+}
+
+#u:hover {
+    color: #ffa260;
+    transform: scale(110%) translate(-10%);
+}
+
+#s:hover {
+    color: #e4cb58;
+    transform: scale(110%) translate(-10%);
+}
+
+#a2:hover {
+    color: #8fc866;
+    transform: scale(110%) translate(-10%);
+}
+
+#y:hover {
+    color: #19bc8b;
+    transform: scale(110%) translate(-10%);
+}
+
+/* ABOUT PAGE */
+
+.header {
+    position: sticky;
+}
+
+.nameplateabt {
+    font-family: handjetextra;
+    color: white;
+    display: inline-block;
+    margin: auto;
+    padding: 2%;
+    margin-left: 7.5%;
+    transition: transform ease-in 0.1s;
+}
+
+
+.linkboxabt {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: 10%;
+    transition: ease 0.5s;
+    border-radius: 10px;
+}
+
+.linkboxabt:hover {
+    transform: scale(105%);
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    background: rgb(25, 188, 139, 0.1);
+    border-radius: 10px;
+}
+
+.linkies {
+    position: inherit;
+    display: inline;
+}
+
+.info {
+    margin: 5%;
+    margin-top: 0;
+    height: 100%;
+    width: 90%;
+    overflow-y: auto;
+    font-size: 30px;
+    padding-right: 3%;
+    padding-top: 3%;
+
+}
+
+main {
+    margin: 5%;
+    margin-top: 0;
+    height: 80%;
+    width: 90%;
+
+}
+
+#divider {
+    width: 100%;
+    text-align: center;
+}
+
+#bleb {
+    font-size: 15px;
+}
+
+p {
+    margin-top: 0;
+    padding: 0;
+}
+
+/* CONTACT PAGE */
+
+.contactcard {
+    height: 70%;
+    width: 80%;
+    background: rgb(25, 188, 139, 0.5);
+    border: solid #19bc8b 5px;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(10%, 5%);
+}
+
+.profilepic {
+    margin: 2%;
+    border-radius: 15px;
+    height: 65%;
+    width: 20%;
+    background: rgb(143, 200, 102, 0.0);
+    border: solid rgb(143, 200, 102, 0.5) 5px;
+    position: absolute;
+    left: 0;
+    transition: ease 2s;
+}
+
+#pfp{
+    display:flex;
+    opacity: 0.8;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#toptxt {
+    margin-top: 5%;
+}
+
+.profilepic:hover {
+    background: rgb(143, 200, 102, 0.5);
+}
+
+.fooper {
+    height: 15%;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    margin: 2%;
+    border: solid rgb(9, 3, 29, 0.5) 5px;
+    border-radius: 10px;
+    background: rgb(9, 3, 29, 0.0);
+    transition: ease 2s;
+}
+
+.fooper:hover {
+    background: rgb(9, 3, 29, 0.5);
+}
+
+.socialmedia {
+    height: 25%;
+    width: 70%;
+    border: solid rgb(228, 203, 88, 0.5) 5px;
+    background: rgb(228, 203, 88, 0.0);
+    transition: ease 2s;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    margin: 3%;
+}
+
+.socialmedia:hover {
+    height: 30%;
+    background: rgb(228, 203, 88, 0.5);
+}
+
+.emailme {
+    height: 25%;
+    width: 70%;
+    border: solid rgb(228, 203, 88, 0.5) 5px;
+    background: rgb(228, 203, 88, 0.0);
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    margin: 3%;
+    top: 35%;
+    transition: ease 2s;
+}
+
+.emailme:hover {
+    top: 30%;
+    height: 30%;
+    background: rgb(228, 203, 88, 0.5);
+}
+
+.quotetext1 {
+    font-family: handjetextra;
+    padding: 1%;
+    padding-left: 2%;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 16.5px;
+}
+
+.quotetext2 {
+    font-family: handjet;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 3%;
+    font-size: 15px;
+}
+
+.btn {
+    margin: 2%;
+    border-radius: 10px;
+    padding: 2%;
+    display: inline-block;
+    position: relative;
+    height: 45%;
+    width: 8%;
+    background: rgb(25, 188, 139, 0.3);
+    transition: ease 1s;
+}
+
+.btn:hover {
+    background: rgb(25, 188, 139, 0.9);
+}
+
+.emailsend {
+    border-radius: 10px;
+    border-style: none;
+    height: 75%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2%;
+    background: rgba(10, 82, 60, 0.3);
+    transition: ease 1s;
+}
+
+.emailsend:hover {
+    background: rgba(10, 82, 60, 0.8);
+}
+
+.sendtext {
+    font-family: handjet;
+    color: white;
+    display: block;
+    position: absolute;
+    margin: -15%;
+    margin-right: 15%;
+    right: 0;
+    font-size: 45px;
+}
+
+.sendtext1 {
+    margin: 0;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-family: handjet;
+    color: white;
+    display: block;
+    left: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.msg {
+    border-radius: 5px;
+    border-style: none;
+    background: rgba(10, 82, 60, 0.8);
+    width: 72%;
+    margin-left: 2%;
+}
+
+.mail {
+    padding: 0.5%;
+}
+
+.xtra {
+    position: absolute;
+    bottom: 0;
+    background: rgba(10, 82, 60, 0.5);
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    height: 30%;
+}
+
+.xtra .text {
+    display: block;
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+
+
+/* GALLERY */
+
+.view {
+    height: 75%;
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    position: inherit;
+    overflow: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 5%;
+    background: rgb(25, 188, 139, 0.1);
+}
+
+.sect {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background: rgb(25, 188, 139, 0.1);
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.secttxt {
+    font-family: handjet;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    font-size: 45px;
+    margin-right: 2%;
+}
+
+.sectfooper{
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    background: rgba(9, 3, 29, 0.3);
+    transition: ease 2s;
+}
+
+.sectfooper:hover{
+    height: 30%;
+}
+
+.sectprev img{
+    border-radius: 10px;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    margin: 2%;
+    margin-top: 8%;
+}
+
