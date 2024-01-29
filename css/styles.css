@@ -41,7 +41,7 @@ a:hover {
 
 .fruit {
     width: 100%;
-    height: 20%;
+    height: 40%;
     margin: auto;
     text-align: center;
     top: 35%;
@@ -76,7 +76,7 @@ a:hover {
 }
 
 .letter {
-    padding: 1px;
+    padding: 0rem;
     margin: auto;
     display: inline-block;
     text-align: center;
@@ -160,6 +160,11 @@ a:hover {
 
 /* ABOUT PAGE */
 
+#mepic {
+    position: relative;
+    width: 100%;
+}
+
 .header {
     position: sticky;
 }
@@ -182,7 +187,8 @@ a:hover {
     cursor: pointer;
     width: 10%;
     transition: ease 0.5s;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: solid rgb(25, 188, 139, 0.1) 3px;
 }
 
 .linkboxabt:hover {
@@ -256,8 +262,8 @@ p {
     transition: ease 2s;
 }
 
-#pfp{
-    display:flex;
+#pfp {
+    display: flex;
     opacity: 0.8;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
@@ -431,12 +437,34 @@ p {
 }
 
 
+/* Gallery Sect */
+
+.txtli {
+    font-family: handjet;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    font-size: 45px;
+}
+
+.txtli:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+.namegal {
+    font-family: handjetextra;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
 
 /* GALLERY */
 
 .view {
     height: 75%;
-    width: 80%;
+    width: 60%;
     margin: auto;
     margin-top: 1%;
     position: inherit;
@@ -445,15 +473,15 @@ p {
 
 .navbar {
     width: 100%;
-    height: 5%;
+    height: 1%;
     background: rgb(25, 188, 139, 0.1);
 }
 
 .sect {
     width: 80%;
-    height: 80%;
-    border-radius: 10px;
-    background: rgb(25, 188, 139, 0.1);
+    height: 20%;
+    border-radius: 5px;
+    border: solid rgb(25, 188, 139, 0.1) 5px;
     display: block;
     position: relative;
     margin: auto;
@@ -470,21 +498,21 @@ p {
     margin-right: 2%;
 }
 
-.sectfooper{
+.sectfooper {
     border-radius: 10px;
     width: 100%;
     position: absolute;
-    height: 20%;
+    height: 10%;
     bottom: 0;
     background: rgba(9, 3, 29, 0.3);
     transition: ease 2s;
 }
 
-.sectfooper:hover{
-    height: 30%;
+.sectfooper:hover {
+    height: 0%;
 }
 
-.sectprev img{
+.sectprev img {
     border-radius: 10px;
     height: 50%;
     width: 50%;
@@ -493,4 +521,3 @@ p {
     margin: 2%;
     margin-top: 8%;
 }
-
