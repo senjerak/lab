@@ -367,6 +367,10 @@ p {
     background: rgb(25, 188, 139, 0.9);
 }
 
+#social {
+    position: relative;
+}
+
 .emailsend {
     border-radius: 10px;
     border-style: none;
@@ -496,6 +500,20 @@ p {
     right: 0;
     font-size: 45px;
     margin-right: 2%;
+}
+
+.secttxtB {
+    font-family: handjet;
+    color: white;
+    font-size: 65px;
+    margin: 0;
+}
+
+.secttxtC {
+    font-family: handjet;
+    color: white;
+    font-size: 65px;
+    margin-left: 6rem;
 }
 
 .sectfooper {
